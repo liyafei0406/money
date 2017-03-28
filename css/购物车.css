@@ -1,0 +1,319 @@
+.back{
+	min-width: 640px;
+	width: 100%;
+}
+.back img{
+	width: 100%;
+}
+.bodybox{
+	width: 100%;
+	background-color: #ebeae4;
+}
+.contentbox{
+	min-width: 640px;
+}
+.areabox{
+	margin:5px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*配送地区 开始*/
+.demo{width:220px;margin:20px auto;}
+
+
+/* citySelector */
+.citySelector{font:12px/1.5 tahoma,arial,\5b8b\4f53;background:#fff;text-align:left;}
+.cityslide{width:250px;list-style:none;margin:0;padding:0;border:1px solid #85BEE5;border-right-color:#3485C0;border-bottom-color:#3485C0;box-shadow:2px 2px 3px rgba(0,0,0,0.3);margin-top:-2px;}
+.cityslide li{list-style:none;overflow:hidden;height:16px;padding:4px 5px;}
+.cityslide li.on{background:#9CD9FF;color:#fff;}
+.cityslide li b{font-weight:normal;}
+.cityslide li.empty{background:#fff2e8;color:#666;}
+.cityslide li.empty em{color:red;font-style:normal;}
+.cityname{float:left;}
+.cityspell{float:right;}
+.cityBox{width:320px;border:1px solid #85BEE5;overflow:hidden;box-shadow:2px 2px 3px rgba(0,0,0,0.3);}
+.cityBox ul{margin:0;padding:0;overflow:hidden;}
+.cityBox ul li{float:left;list-style:none;padding:2px 4px;border:1px solid #85BEE5;cursor:pointer;margin-left:4px;display:inline;background:#E1EFFE;}
+.cityBox ul li.on{background:#fff;border-bottom-color:#fff;position:relative;}
+.hide{display:none;}
+p.tip{color:#666;line-height:20px;padding:5px;margin:0;text-indent:3px;}
+.hotCity{border-top:1px solid #85BEE5;margin-top:-1px;clear:left;overflow:hidden;padding-bottom:5px;padding-top:5px;_margin-bottom:8px;}
+.cityTab{overflow:hidden;}
+.cityTab dl{margin:0;padding:0;overflow:hidden;}
+.cityTab dl dt{float:left;padding-left:3px;color:#F30;text-indent:5px;font-family:"Lucida console","consolas","courier new";line-height:22px;font-size:14px;width:20px;}
+.cityTab dl dd{margin-left:2px;float:left;width:290px;}
+.cityTab dl dd a{padding-left:5px;width:66px;line-height:22px;display:inline-block;color:#000;text-decoration:none;}
+.cityTab dl dd a:hover{text-decoration:underline;color:red}
+.cityinput{ font-size: 12px; padding-left: 2px; border: 1px solid #D8D8D8; }
+.menu{position: relative;}
+.gave{font-size: 14px;}
+.arrow{width: 150px;display: inline-block;width: 10px;height: 10px;border:1px solid #9e9999;transform: rotateZ(45deg);border-left: none;border-top: none;position: absolute;right: 10px;top:3px;}
+
+/*配送地区 结束*/
+
+
+/*全选 开始*/
+.allchoose{
+	width: 100%;
+	height:50px;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px 20px 20px;
+	color: #99886b;
+	font-size: 18px;
+	margin-bottom: 25px;
+}
+.goods{
+	margin-left: 70px;
+}
+.allchoose_right span{
+	margin-left: 150px;
+}
+.allchoose_right span:nth-child(1){
+	margin-left: 0;
+}
+/*全选 结束*/
+
+
+/*物品 开始*/
+.shopbox{
+	width: 100%;
+	padding: 20px;
+	background-color: white;
+}
+.shop_bottom{
+	padding: 10px 20px 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #e9e5e5;
+}
+.shop_bottom_left{
+	color: #99886b;
+	display: flex;
+	align-items: center;
+}
+.shop_bottom_right{
+	display: flex;
+}
+.shop_bottom_left img{
+	margin-right: 20px;
+}
+.shop_bottom_right_l div:first-child{
+	text-align: right;
+	margin-bottom: 10px;
+}
+.btnstyle{
+	width: 100px;
+	color: red;
+	background: white;
+	border:1px solid red;
+	border-radius: 0;
+	padding: 2px;
+	outline: none;
+}
+
+.shop_bottom_right_c{
+	margin: 0 100px;
+	display: flex;
+	align-items: center;
+}
+.number{
+	width: 80px;
+	border:1px solid #cccccc;
+	display: flex;
+	font-size: 16px;
+}
+.number div:nth-child(1){
+	width: 30px;
+	text-align: center;
+	border-right: 1px solid #cccccc;
+}
+.number div:nth-child(2){
+	width: 40px;
+	text-align: center;
+}
+.number div:nth-child(3){
+	width: 30px;
+	text-align: center;
+	border-left: 1px solid #cccccc;
+}
+.surplus{
+	margin-top: 10px;
+	width: 80px;
+	text-align: center;
+	color: red;
+}
+.total{
+	margin-left: 30px;
+}
+.remove{
+	cursor: pointer;
+}
+.remove:hover{
+	color: red;
+}
+
+/*物品 结束*/
+
+/*结算  开始*/
+.balance{
+	width: 100%;
+	height: 58px;
+	background-color: white;
+	margin: 50px 0 20px;
+	padding: 20px 0 0 20px;
+	font-size: 16px;
+	color: #99886b;
+	display: flex;
+	justify-content: space-between;
+}
+.child5{
+	margin-left: 150px;
+}
+.child6{
+	height: 58px;
+	background-color: #e54346;
+	color: white;
+	outline: none;
+	border:none;
+	margin-top: -20px;
+	width: 100px;
+}
+.pcs{
+	color: red;
+}
+/*结算 结束*/
+
+/*最下面的选项卡 开始*/
+	.btngroup{
+		display: flex;
+		justify-content: flex-start;
+	}
+	.btn1,.btn2,.btn3{
+		border:1px solid #c7c7c7;
+		width: 94px;
+		height: 28px;
+		text-align: center;
+		line-height: 28px;
+		border-bottom:none;
+		color: #99886b;
+		background-color: #ebeae4;
+	}
+	.changebtn{
+		border: none;
+		background-color: #94d36b;
+		color: white;
+	}
+	.btn2{
+		margin: 0 5px;
+	}
+	.swiper-container {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+    .swiper-slide {
+        text-align: center;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .append-buttons {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .append-buttons a {
+        display: inline-block;
+        border: 1px solid #007aff;
+        color: #007aff;
+        text-decoration: none;
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin: 0 10px;
+        font-size: 13px;
+    }
+    .swiper-pagination-bullet {
+		width: 10px;
+		height: 10px;
+		display: inline-block;
+		border-radius: 100%;
+		background: #000;
+		opacity: 0.2;
+	}
+	.swiper-pagination-bullet-active {
+  		opacity: 1;
+  		background: #8ed362;
+	}
+	.likebox{
+		padding-top: 20px;
+	}
+	.likeimg{
+		width: 100%;
+	}
+	.likeimg img{
+		width: 100%;
+	}
+	.likeprice{
+		color: red;
+		margin: 5px 0;
+	}
+	.likebtn{
+		color: #99886b;
+		background-color: #ebeae4;
+		border-radius: 5px;
+		margin-bottom: 20px;
+		outline: none;
+	}
+/*最下面的选项卡 开始*/
+
+
+@media screen and (max-width: 992px) {
+	.allchoose_right span{
+		margin-left: 80px;
+	}
+	.shop_bottom_right_c{
+		margin: 0 30px;
+	}
+	.balance{
+		font-size: 14px;
+	}
+	.child5{
+		margin-left: 100px;
+	}
+	
+}
+@media screen and (max-width: 768px) {
+	.allchoose_right span{
+		margin-left: 50px;
+	}
+	.shop_bottom_right_c{
+		margin: 0 10px;
+	}
+	.total{
+		margin-left: 10px;
+	}
+	.shop_bottom{
+		font-size: 12px;
+	}
+	.balance{
+		font-size: 12px;
+	}
+	.child5{
+		margin-left: 30px;
+	}
+}

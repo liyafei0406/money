@@ -1,0 +1,49 @@
+.backbox{
+	width: 100%;
+	margin-bottom: 50px;
+	min-width: 640px;
+}
+.backbox img{
+	width: 100%;
+}
+
+/*fruitbox 开始*/
+.fruitbox{
+	min-width: 640px;
+}
+.fruitbox_top,.fruitbox_bottom{
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.itembox{
+	width: 23%;
+}
+.itembox img{
+	width: 100%;
+}
+.price{
+	color: red;
+}
+.buyinp{
+	border:2px solid #81511c;
+	padding: 2px 5px;
+	outline: none;
+	background-color: white;
+}
+.morebox{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+.moreinp{
+	border:2px solid #81511c;
+	outline: none;
+	background-color: white;
+	width: 150px;
+	height: 30px;
+	font-size: 20px;
+	margin: 0 auto; 
+}
+/*fruitbox 结束*/

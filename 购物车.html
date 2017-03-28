@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/购物车.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+</head>
+<body>
+	<!--头部开始-->
+	<div class="header">
+		<div class="container headbox">
+			<a href="#"><img class="logo" src="img/logo.png"></a>
+			<div class="header_right">
+				<div class="load">
+					<a href="#">登录</a>
+					<a href="#">注册</a>
+					<a href="#">我的</a>
+					<a href="#">收藏</a>
+					<a href="#">消息</a>
+				</div>
+				<div class="load_bottom">
+					<div class="navigate">
+						<div class="nav_top">
+							<div class="wordsbox">
+								<p class="spelling">Home</p>
+								<p class="word">首页</p>
+							</div>
+							<div class="wordsbox">
+								<p class="spelling">Mall</p>
+								<p class="word">商城</p>
+							</div>
+							<div class="wordsbox">
+								<p class="spelling">Choose</p>
+								<p class="word">选菜</p>
+							</div>
+							<div class="wordsbox">
+								<p class="spelling">Community</p>
+								<p class="word">圈子</p>
+							</div>
+							<div class="wordsbox">
+								<p class="spelling">Shopping</p>
+								<p class="word">购物车</p>
+							</div>
+						</div>
+						<div class="nav_bottom">
+							<div class="blank">
+								<div class="greenmenu">
+									<div>推荐菜品</div>
+									<div>新鲜肉类</div>
+									<div>时令蔬菜</div>
+									<div>时令水果</div>
+								</div>
+							</div>
+							<div class="blank">
+								<div class="greenmenu">
+									<div>推荐菜品</div>
+									<div>新鲜肉类</div>
+									<div>时令蔬菜</div>
+									<div>时令水果</div>
+								</div>
+							</div>
+							<div class="blank">
+								<div class="greenmenu">
+									<div>推荐菜品</div>
+									<div>新鲜肉类</div>
+									<div>时令蔬菜</div>
+									<div>时令水果</div>
+								</div>
+							</div>
+							<div class="blank">
+								<div class="greenmenu">
+									<div>推荐菜品</div>
+									<div>新鲜肉类</div>
+									<div>时令蔬菜</div>
+									<div>时令水果</div>
+								</div>
+							</div>
+							<div class="blank">
+								<div class="greenmenu">
+									<div>推荐菜品</div>
+									<div>新鲜肉类</div>
+									<div>时令蔬菜</div>
+									<div>时令水果</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search">
+						<input class="inptext" type="text" placeholder="搜索食材、菜品">
+						<input class="inpbtn" type="button" value="搜索">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--头部结束-->
+
+	<div class="greenstripe"></div>
+
+	<div class="back">
+		<img src="img/购物车/bg1.png">
+	</div>
+	
+	<div class="bodybox">
+		<div class="container contentbox">
+			<div class="areabox">
+				<div>全部商品 <span>5</span> </div>
+				<div class="menu">
+		    		<span class="gave">配送至:</span><input class="cityinput" id="citySelect" value="北京大兴区亦庄" > <span class="arrow"></span>
+		    	</div>
+			</div>
+
+			<!--全选 开始-->
+			<div class="allchoose">
+				<span>
+					<input class="allcheck" type="checkbox">
+					<span>全选</span>
+					<span class="goods">商品</span>
+				</span>
+				<span class="allchoose_right">
+					<span>单价(元)</span>	
+					<span>数量</span>
+					<span>小计(元)</span>
+				</span>
+				
+				
+			</div>
+			<!--全选 结束-->
+
+
+			<!--物品 开始-->
+			<div class="shopbox">
+				<ul>
+					<li>
+						<div><input class="onecheck" type="checkbox"></div>
+						<div class="shop_bottom">
+							<div class="shop_bottom_left">
+								<img src="img/购物车/1.png">
+								<div>
+									<p>本来精选——密云散菜花 350g</p>
+									<p>生态农场直供，新鲜安全</p>
+								</div>
+							</div>
+							<div class="shop_bottom_right">
+								<div class="shop_bottom_right_l">
+									<div class="oneprice">6.00</div>
+									<div>
+										<div class="dropdown">
+  											<button class="btn btnstyle dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   								 			促销优惠
+									    	<span class="caret"></span>
+									  		</button>
+										  	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li class="downmenu">1</li>
+										    <li class="downmenu">2</li>
+										    <li class="downmenu">3</li>
+										    <li class="downmenu">4</li>
+										  	</ul>
+										</div>
+									</div>
+								</div>
+								<div class="shop_bottom_right_c">
+									<div>
+										<div class="number">
+											<div class="subtract">-</div>
+											<div class="numberbox">1</div>
+											<div class="add">+</div>
+										</div>
+										<div class="surplus">仅剩<span>4</span>件</div>
+									</div>
+									<div class="total">6.00</div>
+								</div>
+
+								<div class="shop_bottom_right_r">
+									<p class="remove">删除</p>
+									<p>移动到我的关注</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div><input class="onecheck" type="checkbox"></div>
+						<div class="shop_bottom">
+							<div class="shop_bottom_left">
+								<img src="img/购物车/2.png">
+								<div>
+									<p>本来精选——密云散菜花 350g</p>
+									<p>生态农场直供，新鲜安全</p>
+								</div>
+							</div>
+							<div class="shop_bottom_right">
+								<div class="shop_bottom_right_l">
+									<div class="oneprice">4.00</div>
+									<div>
+										<div class="dropdown">
+  											<button class="btn btnstyle dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   								 			促销优惠
+									    	<span class="caret"></span>
+									  		</button>
+										  	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li class="downmenu">1</li>
+										    <li class="downmenu">2</li>
+										    <li class="downmenu">3</li>
+										    <li class="downmenu">4</li>
+										  	</ul>
+										</div>
+									</div>
+								</div>
+								<div class="shop_bottom_right_c">
+									<div>
+										<div class="number">
+											<div class="subtract">-</div>
+											<div class="numberbox">1</div>
+											<div class="add">+</div>
+										</div>
+										<div class="surplus">仅剩<span>4</span>件</div>
+									</div>
+									<div class="total">4.00</div>
+								</div>
+
+								<div class="shop_bottom_right_r">
+									<p class="remove">删除</p>
+									<p>移动到我的关注</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div><input class="onecheck" type="checkbox"></div>
+						<div class="shop_bottom">
+							<div class="shop_bottom_left">
+								<img src="img/购物车/3.png">
+								<div>
+									<p>本来精选——密云散菜花 350g</p>
+									<p>生态农场直供，新鲜安全</p>
+								</div>
+							</div>
+							<div class="shop_bottom_right">
+								<div class="shop_bottom_right_l">
+									<div class="oneprice">20.00</div>
+									<div>
+										<div class="dropdown">
+  											<button class="btn btnstyle dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   								 			促销优惠
+									    	<span class="caret"></span>
+									  		</button>
+										  	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li class="downmenu">1</li>
+										    <li class="downmenu">2</li>
+										    <li class="downmenu">3</li>
+										    <li class="downmenu">4</li>
+										  	</ul>
+										</div>
+									</div>
+								</div>
+								<div class="shop_bottom_right_c">
+									<div>
+										<div class="number">
+											<div class="subtract">-</div>
+											<div class="numberbox">1</div>
+											<div class="add">+</div>
+										</div>
+										<div class="surplus">仅剩<span>4</span>件</div>
+									</div>
+									<div class="total">20.00</div>
+								</div>
+
+								<div class="shop_bottom_right_r">
+									<p class="remove">删除</p>
+									<p>移动到我的关注</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div><input class="onecheck" type="checkbox"></div>
+						<div class="shop_bottom">
+							<div class="shop_bottom_left">
+								<img src="img/购物车/4.png">
+								<div>
+									<p>本来精选——密云散菜花 350g</p>
+									<p>生态农场直供，新鲜安全</p>
+								</div>
+							</div>
+							<div class="shop_bottom_right">
+								<div class="shop_bottom_right_l">
+									<div class="oneprice">9.00</div>
+									<div>
+										<div class="dropdown">
+  											<button class="btn btnstyle dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   								 			促销优惠
+									    	<span class="caret"></span>
+									  		</button>
+										  	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li class="downmenu">1</li>
+										    <li class="downmenu">2</li>
+										    <li class="downmenu">3</li>
+										    <li class="downmenu">4</li>
+										  	</ul>
+										</div>
+									</div>
+								</div>
+								<div class="shop_bottom_right_c">
+									<div>
+										<div class="number">
+											<div class="subtract">-</div>
+											<div class="numberbox">1</div>
+											<div class="add">+</div>
+										</div>
+										<div class="surplus">仅剩<span>4</span>件</div>
+									</div>
+									<div class="total">9.00</div>
+								</div>
+
+								<div class="shop_bottom_right_r">
+									<p class="remove">删除</p>
+									<p>移动到我的关注</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div><input class="onecheck" type="checkbox"></div>
+						<div class="shop_bottom">
+							<div class="shop_bottom_left">
+								<img src="img/购物车/5.png">
+								<div>
+									<p>本来精选——密云散菜花 350g</p>
+									<p>生态农场直供，新鲜安全</p>
+								</div>
+							</div>
+							<div class="shop_bottom_right">
+								<div class="shop_bottom_right_l">
+									<div class="oneprice">30.00</div>
+									<div>
+										<div class="dropdown">
+  											<button class="btn btnstyle dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   								 			促销优惠
+									    	<span class="caret"></span>
+									  		</button>
+										  	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+										    <li class="downmenu">1</li>
+										    <li class="downmenu">2</li>
+										    <li class="downmenu">3</li>
+										    <li class="downmenu">4</li>
+										  	</ul>
+										</div>
+									</div>
+								</div>
+								<div class="shop_bottom_right_c">
+									<div>
+										<div class="number">
+											<div class="subtract">-</div>
+											<div class="numberbox">1</div>
+											<div class="add">+</div>
+										</div>
+										<div class="surplus">仅剩<span>4</span>件</div>
+									</div>
+									<div class="total">30.00</div>
+								</div>
+
+								<div class="shop_bottom_right_r">
+									<p class="remove">删除</p>
+									<p>移动到我的关注</p>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<!--物品 结束-->
+
+
+			<!--结算 开始-->
+			
+			<div class="balance">
+				<div>
+					<input class="child1" type="checkbox" >
+					<span class="child2">全选</span>
+				</div>
+				<span class="child3">删除选中的商品</span>
+				<span class="child4">移到我的关注</span>
+				<span class="child5">已选<span class="pcs">0</span>件商品~总价(不含运费):￥<span class="totalprice">16.00</span></span>
+				<input class="child6" type="button" value="去结算">
+			</div>
+			<!--结算 结束-->
+
+
+			<!--最后的轮播图-->
+			<div>
+				<div class="btngroup">
+					<div class="btn4 btn1">猜你喜欢</div>
+					<div class="btn4 btn2">我的关注</div>
+					<div class="btn4 btn3">历史浏览</div>
+				</div>
+				<div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide">
+			            <div class="likebox">
+				            	<div class="likeimg"><img src="img/购物车/6.png"></div>
+				            	<div class="likeword1">绿萝马生菜400g</div>
+				            	<div class="likeword1">蔬菜沙拉的当家菜</div>
+				            	<div class="likeprice">￥12.00</div>
+				            	<input class="likebtn" type="button" value="加入购物车">
+			            	</div>
+			            	
+			            </div>
+			            <div class="swiper-slide">
+			            	<div class="likebox">
+				            	<div class="likeimg"><img src="img/购物车/7.png"></div>
+				            	<div class="likeword1">绿萝马生菜400g</div>
+				            	<div class="likeword1">蔬菜沙拉的当家菜</div>
+				            	<div class="likeprice">￥12.00</div>
+				            	<input class="likebtn" type="button" value="加入购物车">
+			            	</div>
+			            </div>
+			            <div class="swiper-slide">
+			            	<div class="likebox">
+				            	<div class="likeimg"><img src="img/购物车/8.png"></div>
+				            	<div class="likeword1">绿萝马生菜400g</div>
+				            	<div class="likeword1">蔬菜沙拉的当家菜</div>
+				            	<div class="likeprice">￥12.00</div>
+				            	<input class="likebtn" type="button" value="加入购物车">
+			            	</div>
+			            </div>
+			            <div class="swiper-slide">
+			            	<div class="likebox">
+				            	<div class="likeimg"><img src="img/购物车/9.png"></div>
+				            	<div class="likeword1">绿萝马生菜400g</div>
+				            	<div class="likeword1">蔬菜沙拉的当家菜</div>
+				            	<div class="likeprice">￥12.00</div>
+				            	<input class="likebtn" type="button" value="加入购物车">
+			            	</div>
+			            </div>
+			            <div class="swiper-slide">
+			            	<div class="likebox">
+				            	<div class="likeimg"><img src="img/购物车/10.png"></div>
+				            	<div class="likeword1">绿萝马生菜400g</div>
+				            	<div class="likeword1">蔬菜沙拉的当家菜</div>
+				            	<div class="likeprice">￥12.00</div>
+				            	<input class="likebtn" type="button" value="加入购物车">
+			            	</div>
+			            </div>
+			            <div class="swiper-slide">
+			            	<div class="likebox">
+				            	<div class="likeimg"><img src="img/购物车/6.png"></div>
+				            	<div class="likeword1">绿萝马生菜400g</div>
+				            	<div class="likeword1">蔬菜沙拉的当家菜</div>
+				            	<div class="likeprice">￥12.00</div>
+				            	<input class="likebtn" type="button" value="加入购物车">
+			            	</div>
+			            </div>
+			            <div class="swiper-slide">
+			            	<div class="likebox">
+				            	<div class="likeimg"><img src="img/购物车/7.png"></div>
+				            	<div class="likeword1">绿萝马生菜400g</div>
+				            	<div class="likeword1">蔬菜沙拉的当家菜</div>
+				            	<div class="likeprice">￥12.00</div>
+				            	<input class="likebtn" type="button" value="加入购物车">
+			            	</div>
+			            </div>
+			        </div>
+
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination"></div>
+			        <!-- Add Arrows -->
+			        <div class="swiper-button-next"></div>
+			        <div class="swiper-button-prev"></div>
+			    </div>
+			</div>
+			
+		</div>
+	</div>
+	
+
+	<!--配送地区-->
+	
+	
+	<!--尾部开始-->
+	<div class="foot">
+		<div class="foot_top">
+			<div class="container footbox">
+				<div class="greenbox1">
+					<div class="greenword">8小时低温</div>
+					<div>全程冷链配送</div>
+				</div>
+				<div class="greenbox2">
+					<div class="greenword">0时差基地直供</div>
+					<div>农田到餐桌</div>
+				</div>
+				<div class="greenbox3">
+					<div class="greenword">43项检测</div>
+					<div>安全无农残</div>
+				</div>
+				<div class="greenbox4">
+					<div class="greenword">7*24小时营业</div>
+					<div>全年无休</div>
+				</div>
+				<div class="greenbox5">
+					<div class="greenword">满99免运费</div>
+					<div>今日下单次日送达</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--尾部中部-->
+		<div class="container foot_center">
+			<ul>
+				<li id="graybox1">新手指南</li>
+				<li>购物流程</li>
+				<li>会员政策</li>
+				<li>联系客服</li>
+				<li>积分政策</li>
+				<li>加入我们</li>
+			</ul>
+			<ul>
+				<li id="graybox2">配送方式</li>
+				<li>全程冷链</li>
+				<li>配送时间</li>
+				<li>配送范围</li>
+				<li>配送收费标准</li>
+				<li>关于我们</li>
+			</ul>
+			<ul>
+				<li id="graybox3">支付方式</li>
+				<li>在线支付</li>
+				<li>其他支付方式</li>
+				<li>优惠券使用</li>
+				<li>礼金卡使用</li>
+			</ul>
+			<ul>
+				<li id="graybox4">售后服务</li>
+				<li>验货与拒收政策</li>
+				<li>退换货政策</li>
+				<li>货换货流程</li>
+				<li>退款流程</li>
+				<li>发票制度</li>
+			</ul>
+		</div>
+	</div>
+	<!--尾部中部结束-->
+
+	<!--尾部底部开始-->
+	
+	<div class="container foot_bottom">
+		<p>客服电话:4008-000-917(周一至周日 8:00-20:00)</p>
+		<ul class="visit">
+			<li>加入我们</li>
+			<li>联系我们</li>
+			<li>关于我们</li>
+			<li>友情链接</li>
+			<li>品牌食材</li>
+			<li>食品流通许可证</li>
+			<li id="nopad">营业执照</li>
+		</ul>
+		<div>北京市公安局分局备案标号11010502022388 丨 京ICP证120338号</div>
+		<div>2012-2016 Benlai.com.All Rights Reserved.北京本来工坊科技有限公司</div>
+	</div>
+	<!--尾部底部结束-->
+
+
+	<!--尾部结束-->
+
+
+
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/swiper-3.3.1.jquery.min.js" type="text/javascript"></script>
+	<script src="js/购物车.js" type="text/javascript"></script>
+</body>
+</html>

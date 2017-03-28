@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		a{
+			text-decoration: none!important;
+			color: black;
+		}
+		li{
+			list-style: none;
+		}
+		/*头部开始*/
+		.header{
+			min-width: 640px;
+			width: 100%;
+			height:130px;
+			background-color: #48382b;
+		}
+		.headbox{
+			display: flex;
+
+		}
+		.logo{
+			margin-top: 19px;
+		}
+		.header_right{
+			width: 100%;
+			height: 130px;
+		}
+		.load{
+			display: flex;
+			justify-content: flex-end;
+			padding-right: 100px;
+		}
+		.load a{
+			color: white;
+			padding:0 15px;
+			border-right: 1px solid white;
+			margin-top: 5px;
+		}
+		.load a:nth-child(5){
+			border-right: none;
+		}
+		.load_bottom{
+			width:100%;
+			display: flex;
+		}
+		.navigate{
+			width: 70%;
+			display: flex;
+			flex-direction: column;
+			padding-top: 20px;
+		}
+		.nav_top{
+			margin-top: 20px;
+			display: flex;
+			justify-content: flex-end;
+			color: #b3d19d;
+		}
+		.nav_top div{
+			width:100px;
+			
+		}
+		.nav_top div p{
+			display: flex;
+			justify-content: center;
+			font-size: 16px;
+		}
+		.spelling{
+			margin-bottom: 5px!important;
+			color: #99886b;
+		}
+		.word:hover{
+			color: #8ad35a;
+		}
+		.nav_bottom{
+			margin-top: -15px;
+			display: flex;
+			justify-content: flex-end;
+		}
+		.nav_bottom div{
+			width: 100px;
+			height: 20px;
+			border-left:1px solid #99886b;
+		}
+		.search{
+			width:30%;
+			margin-top: 30px;
+			height: 48px;
+			padding-left: 50px!important;
+			border-radius: 20px;
+			box-shadow: inset 1px 1px 3px black,inset -1px -1px 3px white;
+			background:url(img/fangdajing.png) no-repeat 10px 13px;
+			background-color: #403228;
+			display: flex;
+			overflow: hidden;
+			justify-content: space-between;
+			align-items: center;
+			padding-left: 20px;
+		}
+		.inptext{
+			border:none;
+			outline: none;
+			height: 30px;
+			width:60%;
+			color: #99886b;
+			background-color: #403228;
+		}
+		.inpbtn{
+			outline: none;
+			height: 48px;
+			width: 70px;
+			color: #99886b;
+			background-color: #403228;
+		}
+		/*头部结束*/
+		
+		.shipinbox{
+			min-width: 640px;
+		}
+		.shipinbox img{
+			width: 100%;
+		}
+
+		/*尾部开始*/
+		.footbox{
+			min-width: 640px;
+			display: flex;
+			height: 115px;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.foot_top{
+			width: 100%;
+			height: 115px;
+			background-color: #fbfbfb;
+		}
+		.greenbox1{
+			padding-left: 48px;
+			background:url(img/foot/1.png) no-repeat;
+		}
+		.greenbox2{
+			padding-left: 48px;
+			background:url(img/foot/2.png) no-repeat;
+		}
+		.greenbox3{
+			padding-left: 48px;
+			background:url(img/foot/3.png) no-repeat;
+		}
+		.greenbox4{
+			padding-left: 48px;
+			background:url(img/foot/4.png) no-repeat;
+		}
+		.greenbox5{
+			padding-left: 48px;
+			background:url(img/foot/5.png) no-repeat;
+		}
+		.greenword{
+			color: #b7d27e;
+			font-size: 18px;
+		}	
+		.foot_center{
+			min-width: 640px;
+			margin-top: 20px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.foot_center li{
+			padding-left: 30px;
+			border-left: 1px dotted #cecece;
+		}
+		#graybox1{
+			background: url(img/foot/6.png) no-repeat;
+			border-left: 0;
+			padding-left: 35px;
+			font-size: 16px;
+			font-weight: bold;
+			margin-left: -10px;
+			margin-bottom: 20px;
+		}
+		#graybox2{
+			background: url(img/foot/7.png) no-repeat;
+			border-left: 0;
+			padding-left: 35px;
+			font-size: 16px;
+			font-weight: bold;
+			margin-left: -10px;
+			margin-bottom: 20px;
+		}
+		#graybox3{
+			background: url(img/foot/8.png) no-repeat;
+			border-left: 0;
+			padding-left: 35px;
+			font-size: 16px;
+			font-weight: bold;
+			margin-left: -10px;
+			margin-bottom: 20px;
+		}
+		#graybox4{
+			background: url(img/foot/9.png) no-repeat;
+			border-left: 0;
+			padding-left: 35px;
+			font-size: 16px;
+			font-weight: bold;
+			margin-left: -10px;
+			margin-bottom: 20px;
+		}
+
+		.foot_bottom{
+			min-width: 640px;
+			margin-top: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.visit{
+			width: 640px;
+			display: flex;
+			justify-content: space-between;
+		
+		}
+		.visit li{
+			padding-right:10px;
+			border-right: 2px solid #646464;
+		}
+		#nopad{
+			padding-right:0px;
+			border-right:none;
+		}
+		/*尾部结束*/
+		@media screen and (max-width: 768px) {
+			.foot_top{
+				font-size: 12px;
+			}
+			.greenword{
+				color: #b7d27e;
+				font-size: 12px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<!--头部开始-->
+	<div class="header">
+		<div class="container headbox">
+			<a href="#"><img class="logo" src="img/logo.png"></a>
+			<div class="header_right">
+				<div class="load">
+					<a href="#">登录</a>
+					<a href="#">注册</a>
+					<a href="#">我的</a>
+					<a href="#">收藏</a>
+					<a href="#">消息</a>
+				</div>
+				<div class="load_bottom">
+					<div class="navigate">
+						<div class="nav_top">
+							<div>
+								<p class="spelling">Home</p>
+								<p class="word">首页</p>
+							</div>
+							<div>
+								<p class="spelling">Mall</p>
+								<p class="word">商城</p>
+							</div>
+							<div>
+								<p class="spelling">Choose</p>
+								<p class="word">选菜</p>
+							</div>
+							<div>
+								<p class="spelling">Community</p>
+								<p class="word">圈子</p>
+							</div>
+							<div>
+								<p class="spelling">Shopping</p>
+								<p class="word">购物车</p>
+							</div>
+						</div>
+						<div class="nav_bottom">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+					<div class="search">
+						<input class="inptext" type="text" placeholder="搜索食材、菜品">
+						<input class="inpbtn" type="button" value="搜索">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--头部结束-->
+	<div class="container shipinbox">
+		<img src="img/视频区/1.png">
+		<img src="img/视频区/2.png">
+		<img src="img/视频区/3.png">
+		<img src="img/视频区/4.png">
+		<img src="img/视频区/5.png">
+	</div>
+	
+	<!--尾部开始-->
+	<div class="foot">
+		<div class="foot_top">
+			<div class="container footbox">
+				<div class="greenbox1">
+					<div class="greenword">8小时低温</div>
+					<div>全程冷链配送</div>
+				</div>
+				<div class="greenbox2">
+					<div class="greenword">0时差基地直供</div>
+					<div>农田到餐桌</div>
+				</div>
+				<div class="greenbox3">
+					<div class="greenword">43项检测</div>
+					<div>安全无农残</div>
+				</div>
+				<div class="greenbox4">
+					<div class="greenword">7*24小时营业</div>
+					<div>全年无休</div>
+				</div>
+				<div class="greenbox5">
+					<div class="greenword">满99免运费</div>
+					<div>今日下单次日送达</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--尾部中部-->
+		<div class="container foot_center">
+			<ul>
+				<li id="graybox1">新手指南</li>
+				<li>购物流程</li>
+				<li>会员政策</li>
+				<li>联系客服</li>
+				<li>积分政策</li>
+				<li>加入我们</li>
+			</ul>
+			<ul>
+				<li id="graybox2">配送方式</li>
+				<li>全程冷链</li>
+				<li>配送时间</li>
+				<li>配送范围</li>
+				<li>配送收费标准</li>
+				<li>关于我们</li>
+			</ul>
+			<ul>
+				<li id="graybox3">支付方式</li>
+				<li>在线支付</li>
+				<li>其他支付方式</li>
+				<li>优惠券使用</li>
+				<li>礼金卡使用</li>
+			</ul>
+			<ul>
+				<li id="graybox4">售后服务</li>
+				<li>验货与拒收政策</li>
+				<li>退换货政策</li>
+				<li>货换货流程</li>
+				<li>退款流程</li>
+				<li>发票制度</li>
+			</ul>
+		</div>
+	</div>
+	<!--尾部中部结束-->
+
+	<!--尾部底部开始-->
+	
+	<div class="container foot_bottom">
+		<p>客服电话:4008-000-917(周一至周日 8:00-20:00)</p>
+		<ul class="visit">
+			<li>加入我们</li>
+			<li>联系我们</li>
+			<li>关于我们</li>
+			<li>友情链接</li>
+			<li>品牌食材</li>
+			<li>食品流通许可证</li>
+			<li id="nopad">营业执照</li>
+		</ul>
+		<div>北京市公安局分局备案标号11010502022388 丨 京ICP证120338号</div>
+		<div>2012-2016 Benlai.com.All Rights Reserved.北京本来工坊科技有限公司</div>
+	</div>
+	<!--尾部底部结束-->
+
+
+	<!--尾部结束-->
+
+
+
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>
