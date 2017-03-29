@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>小样来挑战吧！</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="content" id="content">
+				<div id="loading">
+					<div><img src="img/loading.gif"/></div>
+				</div>
+				<!--封面-->
+				<div class="cover page">
+					<div class="enter  button-m" id="enter">
+						<img src="img/enter-on.png" alt="" />
+					</div>
+					
+					<!--后台，用户数据-->
+					<span id="php"></span>
+					
+					
+				</div>
+				<!--选择角色页面-->
+				<div class="chooserole page">
+					<div class="chooseitems " id="chooseitems">
+						<img class="chooseitem1" id="chooseitem1" src="img/choose-1.png" alt="0"/>
+						<img class="chooseitem2" src="img/choose-2.png" alt="1"/>
+						<img class="chooseitem3" src="img/choose-3.png" alt="2"/>
+						<img class="chooseitem4" src="img/choose-4.png" alt="3"/>
+						<img class="chooseitem5" src="img/choose-5.png" alt="4"/>
+					</div>
+					<div class="tabitems  button-m" id="tabitems">
+						<ul>
+							<li>
+								<img src="img/baike-on.png" tab-src="img/baike-off.png" alt="0" /><p class="spacing fontcolor">白客</p>
+							</li>
+							<li>
+								<img src="img/hanxue-off.png" tab-src="img/hanxue-on.png" alt="1" /><p class="spacing">韩雪</p>
+							</li>
+							<li>
+								<img src="img/mingdao-off.png" tab-src="img/mingdao-on.png" alt="2" /><p class="spacing">明道</p>
+							</li>
+							<li>
+								<img src="img/liuyuxi-off.png" tab-src="img/liuyuxi-on.png" alt="3" /><p class="">刘语熙</p>
+							</li>
+							<li>
+								<img src="img/xukaipin-off.png" tab-src="img/xukaipin-on.png" alt="4" /><p class="">徐开骋</p>
+							</li>
+						</ul>
+					</div>
+					<div id="enterlook" class=" button-m">
+						<img  src="img/choose-on.png"/>
+					</div>
+				</div>
+				<!--游戏页面-->
+				<div class="gamecontent page">
+					<!--游戏开始提示-->
+					<div id="gamestarttip">
+						<img src="img/click-here.png"/>
+					</div>
+					<div class="head">
+						<div class="get" id="get" score="">
+							<!--<img src=""/>
+							<img src=""/>
+							<img src=""/>
+							<img src=""/>-->
+						</div>
+						<div class="score"><img src="img/score.png"/></div>
+						<div class="timer" id="timer">
+							<img src="img/t2.png"/>
+							<img src="img/t0.png"/>
+							<img id='timeimg' src="img/time.png"/>
+							<img src="img/t0.png"/>
+							<img src="img/t0.png"/>
+						</div>
+						<div class="button  button-m" id="button"><img src="img/button-on.png" tab-src="img/button-off.png"/></div>
+					</div>
+					<!--gameover-->
+					<div class="gameover">
+						<div class="totalpoints">
+							<img src=""/>
+							<img src=""/>
+							<img src=""/>
+							<img src=""/>
+						</div>
+						<div class="playagain  button-m">
+							<img src="img/playagain.png"/>
+						</div>
+						<div class="rank  button-m">
+							<img src="img/rank.png"/>
+						</div>
+						<span id="php2"></span>
+					</div>
+					<!--游戏区-->
+					<div class="body">
+						<div class="roleItem" >
+							<img id="roleItem" src="" alt="" />
+						</div>
+						<div class="hook " id="hook">
+							<img id="gunzi" src="img/gunzi.png" alt="" />
+							<img src="img/xipan.png" alt="" />
+							<div id="goods"></div>
+						</div>
+						<div class="bigBomb"><img src="img/bombeffect.png"/></div>
+						<!--显示得分-->
+						<div class="gotscore">
+							<img src=""/><img src=""/><img src=""/>
+						</div>
+						<div class="prize">
+							<div class="item1 "> 
+								<img id='faguang' class="faGuang" src="img/faguang.png"/>
+								<div >
+									<img src="img/baoxiang.png" value="888"/>
+								</div>
+							</div>
+							<div class="item2 ">
+								<div ><img src="img/sugar3.png" value="77"/></div>
+							</div>
+							<div class="item3 ">
+								<div ><img src="img/rusuan3.png" value="88"/></div>
+							</div>
+							<div class="item4 ">
+								<div ><img src="img/goods4.png" value="100"/></div>
+							</div>
+							<div class="item5 ">
+								<div ><img src="img/goods1.png" value="169"/></div>
+							</div>
+							<div class="item6 ">
+								<div ><img src="img/sugar2.png" value="188"/></div>
+							</div>
+							<div class="item7 ">
+								<div ><img src="img/cake2.png" value="222"/></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--积分榜页面-->
+				<div class="integral page">
+					<ul class="list">
+						<!--<li><span>1</span><img src=""/><span></span><span></span></li>
+						<li><span>2</span><img src=""/><span></span><span></span></li>
+						<li><span>3</span><img src=""/><span></span><span></span></li>
+						<li><span>4</span><img src=""/><span></span><span></span></li>
+						<li><span>5</span><img src=""/><span></span><span></span></li>-->
+					</ul>
+					<div class="backgame  button-m"></div>
+					<div class="award  button-m"></div>
+				</div>
+				<!--获奖规则页面-->
+				<div class="winaward page">
+					<div class="rule"></div>
+					<div class="lookscore  button-m"><img src="img/lookscore-btn.png"/></div>
+					<div class="shop"><a href="http://haocaitou.jd.com/"><img src="img/shop-btn.png"/></a></div>
+				</div>
+				<!--音频-->
+
+				<!--<audio id="music-bg"  loop='loop' autoplay="autoplay" preload="auto">
+					<source src="audio/bg.mp3" type="audio/mpeg"></source>
+				</audio>-->
+				
+				<!--<audio id="music-bg" src="audio/bgm.mp3"  loop="loop" autoplay="autoplay" type="audio/mpeg" ></audio>
+				<audio id="music-countdown" src="audio/lastfive2.mp3" type="audio/mpeg"></audio>
+				<audio id="music-bomb" src="audio/bomb.mp3" stype="audio/mpeg"></audio>-->
+				
+				
+				<!--<audio id="music-got" >
+					<source src="audio/got.mp3" type="audio/mpeg"></source>
+				</audio>
+				<audio id="music-score" >
+					<source src="audio/score.mp3" type="audio/mpeg"></source>
+				</audio>-->
+			</div>
+		</div>
+	</body>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/weixinapi.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/index.js" charset="utf-8"></script>
+<!--<script src="js/soundmanager2-jsmin.js" type="text/javascript" charset="utf-8"></script>-->
+<script type="text/javascript">
+//soundManager.setup({
+	//只能放在.html 下使用
+//onready: function() {
+//  soundManager.play('music-bg', 'audio/bg.mp3');
+//}
+//soundManager.waitForWindowLoad = false; 
+
+	
+//	var bgm = null,
+//		countTimeSound = null,
+//		bombSound = null;
+//	soundManager.onload = function(){
+//		bgm=soundManager.createSound({
+//			id: 'music-bg', 
+//			url: 'audio/bgm.mp3',
+//			autoLoad:true,
+//			autoPlay:true,
+//			loop:true,
+//			onfinish:function(){
+//				this.play();
+//			}
+//		});
+//		countTimeSound=soundManager.createSound({
+//			id: 'music-five', 
+//			url: 'audio/lastfive2.mp3',
+//			autoLoad:true,
+//			autoPlay:false,
+//			loop:false,
+//			onfinish:function(){
+//				bgm.play();
+//			}
+//		});
+//		bombSound=soundManager.createSound({
+//			id: 'music-bomb', 
+//			url: 'audio/bomb.mp3',
+//			autoLoad:true,
+//			autoPlay:false,
+//			loop:false,
+//			onfinish:function(){
+//				bgm.play();
+//			}
+//		});
+//		bgm.play();
+//	}
+
+
+	// 需要分享的内容，请放到ready里
+    WeixinApi.ready(function(Api) {
+        // 微信分享的数据
+        var wxData = {
+            "appId": "", // 服务号可以填写appId
+            "imgUrl" : 'http://4.lhxxiaoyang.sinaapp.com/img/title.png',	//游戏icon
+            "link" : 'http://4.lhxxiaoyang.sinaapp.com/',	//游戏链接/推广链接
+            "desc" : '小样来挑战吧!我获得'+$('#get').attr('score')+'的高分',	//可以加上 用户得分，呼唤小伙伴
+            "title" : "小样来挑战吧!"
+        };
+        // 分享的回调
+        var wxCallbacks = {
+            // 分享操作开始之前
+            ready : function() {
+                // 你可以在这里对分享的数据进行重组
+                wxData.desc = '小样来挑战吧!我获得'+$('#get').attr('score')+'的高分';
+            },
+            // 分享被用户自动取消
+            cancel : function(resp) {
+            },
+            // 分享失败了
+            fail : function(resp) {
+            },
+            // 分享成功
+            confirm : function(resp) {
+            },
+            // 整个分享过程结束
+            all : function(resp,shareTo) {
+                // 如果你做的是一个鼓励用户进行分享的产品，在这里是不是可以给用户一些反馈了？
+                // alert("分享" + (shareTo ? "到" + shareTo : "") + "结束，msg=" + resp.err_msg);
+            }
+        };
+        // 用户点开右上角popup菜单后，点击分享给好友，会执行下面这个代码
+        Api.shareToFriend(wxData, wxCallbacks);
+        // 点击分享到朋友圈，会执行下面这个代码
+        Api.shareToTimeline(wxData, wxCallbacks);
+        // 点击分享到腾讯微博，会执行下面这个代码
+        Api.shareToWeibo(wxData, wxCallbacks);
+        // iOS上，可以直接调用这个API进行分享，一句话搞定
+        Api.generalShare(wxData,wxCallbacks);
+        // 有可能用户是直接用微信“扫一扫”打开的，这个情况下，optionMenu、toolbar都是off状态
+        // 为了方便用户测试，我先来trigger show一下
+        // optionMenu
+        var elOptionMenu = document.getElementById('optionMenu');
+        elOptionMenu.click(); // 先隐藏
+        elOptionMenu.click(); // 再显示
+        // toolbar
+        var elToolbar = document.getElementById('toolbar');
+        elToolbar.click(); // 先隐藏
+        elToolbar.click(); // 再显示
+    });
+</script>
+</html>

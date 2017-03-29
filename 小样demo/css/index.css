@@ -1,0 +1,916 @@
+html{
+	font-size: 100%;
+}
+body{
+	font-size: 1em;
+	background: #ccc;
+}
+title{
+	text-align: center;
+}
+.wrap{
+	margin: 0 auto;
+  	overflow: hidden;
+  	width: 100%;
+  	height: 100%;
+  	max-width: 640px;
+  	max-height: 1136px;
+  	min-width: 320px;
+  	/*min-height: 568px;*/
+  	position: absolute;
+  	left: 0;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	background-color: #fff;
+}
+.content{
+	position: absolute;
+	overflow: visible;
+	width: 100%;
+	height: 100%;
+	left: 0%;
+	top: 0;
+}
+/*loading*/
+#loading{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: #fff;
+}
+#loading div{
+	position: absolute;
+	left: 42%;
+	top: 45%;
+	width: 20%;
+}
+#loading div img{
+	max-width: 100%;
+}
+/********* 封面页 ****/
+.cover{
+	position: absolute;
+	left: 0%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+  	background: url(../img/cover-bg.png) no-repeat;
+  	background-size: 100% 100%;
+  	display: none;
+}
+#php{
+	position: absolute;
+	
+}
+#php2{
+	position: absolute;
+	font-size: 1em;
+}
+.enter{
+	position: relative;
+	bottom: -83%;
+	width: 54.375%;
+	height: 8.45%;
+	margin: 0 auto;
+	z-index: 100;
+}
+.enter img{
+	max-width: 100%;
+}
+#music-bg{
+	position: absolute;
+	top: 139%;
+	left: 20%;
+	z-index: 200;
+	display: block;
+	height: 9%;
+	width: 330%;
+}
+/***** 选择角色 *****/
+.chooserole{
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+  	/*background: url(../img/choose-bg.png) no-repeat 0 21%;*/
+  	background: url(../img/choose-bg.png) no-repeat ;
+  	background-size: 100% 100%;
+}
+.chooseitems{
+	position: absolute;
+	overflow: visible;
+	width: 100%;
+	height: 100%;
+	left: 0%;
+	top: 0;
+}
+.chooseitems img{
+	position: absolute;
+	left: 100%;
+}
+#chooseitem1{
+	left: 31.56%;
+	bottom: 41.81%;
+}
+.chooseitem1{
+	width: 41.56%;
+}
+.chooseitem2{
+	width: 58.625%;
+	bottom: 42.08%;
+}
+.chooseitem3{
+	width: 45.625%;
+	bottom: 41.81%;
+}
+.chooseitem4{
+	width: 52.8125%;
+	bottom: 41.99%;
+}
+.chooseitem5{
+	width: 45.66%;
+	bottom: 41.81%;
+}
+
+.tabitems{
+	position: absolute;
+	left: 3.2%;
+	top: 65.6%;
+	width: 100%;
+}
+.tabitems ul{
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+.tabitems ul li{
+	margin: 0 1.56%;
+	float: left;
+	list-style: none;
+	width: 15.625%;
+}
+.tabitems ul li img{
+	display: block;
+	max-width: 100%;
+}
+.tabitems ul li p{
+	margin: 0;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 2.42em;
+}
+.spacing{
+	letter-spacing: 0.3em;
+}
+.fontcolor{
+	color: #ea5413;
+}
+#enterlook{
+	width: 54.375%;
+	height: 8.45%;
+	position: absolute;
+	left: 22.8%;
+	bottom: 7.3%;
+}
+#enterlook img{
+	max-width: 100%;
+}
+
+/******** 游戏页面 ***********/
+.gamecontent{
+	position: absolute;
+	left: 200%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+  	background: url(../img/bg.png) no-repeat;
+  	background-size: 100% 100%;
+}
+
+
+/*时间，分数，button*/
+
+.head{
+	width: 100%;
+	overflow: hidden;
+}
+.head div{
+	position: absolute;
+}
+/*gamestart tip*/
+#gamestarttip{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.6;
+	z-index: 100;
+}
+#gamestarttip img{
+	position: absolute;
+	right: 20%;
+	bottom: 10%;
+	max-width: 45.3%;
+	max-height: 30%;
+}
+
+.score img{
+	max-width: 100%;
+}
+.get{
+	left: 4%;
+	top: 6.28%;
+	width: 41.56%;
+	z-index: 10;
+}
+.get img{
+	width: 19%;
+	max-width: 100%;
+}
+.score{
+	left: 4.06%;
+	top: 10.4%;
+	width: 28.6%;
+}
+#timer{
+	left: 4.69%;
+	top: 22%;
+	width: 28.72%;
+	overflow: hidden;
+}
+.timer img{
+	max-width: 15%;
+}
+#timeimg{
+	padding-bottom: 3%;
+	max-width: 4%;
+}
+.button{
+	right: 2.2%;
+	bottom: 4.9%;
+	width: 25%;
+	z-index: 100;
+}
+.button img{
+	max-width: 100%;
+}
+/*gameover*/
+.gameover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0%;
+	z-index: 100;
+	overflow: hidden;
+	display: none;
+	background: url(../img/gameover-bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.gameover div{
+	position: absolute;
+}
+.gameover div img{
+	max-width: 100%;
+}
+.totalpoints{
+	left: 50.75%;
+	bottom: 57.41%;
+	width: 44.06%;
+}
+.totalpoints img{
+	width: 19%;
+	max-width: 100%;
+}
+
+.playagain{
+	left: 16.1%;
+	bottom: 37.45%;
+	width: 31.25%;
+}
+.rank{
+	right: 15.9%;
+	bottom: 37.45%;
+	width: 31.25%;
+}
+/*人物，奖品，工具，得分,爆炸*/
+.body{
+	width: 100%;
+}
+.gotscore{
+	position: absolute;
+	left:0;
+	top:50%;
+	width: 15%;
+	display: none;
+	z-index: 100;
+}
+.gotscore img{
+	max-width: 30%;
+}
+.roleItem,.hook{
+	position: absolute;
+}
+.roleItem img,.hook img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.roleItem img{
+	position: absolute;
+	bottom: 0;
+}
+.roleItem{
+	/*left: 40.3%;
+	top: 4.4%;*/
+	width: 35.3%;
+}
+.hook{
+	left: 35.8%;
+	top: 19.37%;
+	width: 12.8%;
+	overflow: visible;
+}
+#gunzi{
+	width: 100%;
+	height: 132px;	
+}
+#hook img{
+	float: left;
+}
+#goods{
+	position: absolute;
+	top: 90%;
+	overflow: visible;
+}
+#goods img{
+	max-width: 200%;
+	float: left;
+}
+.bigBomb{
+	position: absolute;
+	width: 110%;
+	height: 100%;
+	left: 0%;
+	top: 0%;
+	z-index: 200;
+	display: none;
+}
+.bigBomb img{
+	max-width: 100%;
+	max-height: 100%;
+	height: 100%;
+	width: 100%;
+}
+
+/*奖品*/
+.prize{
+	overflow: hidden;
+}
+.prize > div{
+	position: absolute;
+	text-align: center;
+	background-size: 100% 100%;
+}
+.prize div div {
+
+}
+.prize div div img{
+	max-width: 100%;
+	position: relative;
+}
+.item1{
+	width: 22.97%;
+	height: 5.46%;
+	left: 0%;
+	bottom: 2%;
+	background: url(../img/yun1.png) no-repeat ;
+}
+.item1 div{
+	width: 71.56%;
+	position: absolute;
+	z-index: 20;
+	left: 8%;
+	bottom: 15.87%;
+}
+#faguang{
+	position: absolute;
+	max-width: 200%;
+	top: -300%;
+	left:-54%;
+}
+.item2{
+	width: 29.53%;
+	height: 7.04%;
+	right: 0%;
+	bottom: 5.78%;
+	background: url(../img/yun2.png) no-repeat ;
+}
+.item2 div{
+	width: 66.14%;
+	position: absolute;
+	left: 20.63%;
+	bottom: 17.5%;
+}
+.item3{
+	width: 31.25%;
+	height: 7.48%;
+	right: 0%;
+	bottom: 14.35%;
+	background: url(../img/yun3.png) no-repeat ;
+}
+.item3 div{
+	width: 41.5%;
+	position: absolute;
+	left: 30%;
+	bottom: 16.53%;
+}
+.item4{
+	width: 22.03%;
+	height: 6.074%;
+	left: 0%;
+	bottom: 23.59%;
+	background: url(../img/yun4.png) no-repeat ;
+}
+.item4 div{
+	width: 80%;
+	position: absolute;
+	left: 3%;
+	bottom: 10%;
+}
+.item5{
+	width: 28.28%;
+	height: 7.66%;
+	left: 0%;
+	bottom: 33.2%;
+	background: url(../img/yun5.png) no-repeat ;
+}
+.item5 div{
+	width: 75%;
+	position: absolute;
+	max-height: 50%;
+	left: 10%;
+	bottom: 90.05%;
+}
+.item6{
+	width: 26.72%;
+	height: 8.19%;
+	right: 0%;
+	bottom: 36.8%;
+	background: url(../img/yun6.png) no-repeat 0 50%;
+}
+.item6 div{
+	width: 67%;
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+}
+
+.item7{
+	width: 30.78%;
+	height: 7.835%;
+	left: 0%;
+	bottom: 44.98%;
+	background: url(../img/yun7.png) no-repeat 0 50%;
+}
+.item7 div{
+	width: 43.15%;
+	position: absolute;
+	left: 21.47%;
+	bottom: 32.58%;
+}
+
+/**** 积分页面 *****/
+.integral{
+	position: absolute;
+	left: 300%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+  	/*background: url(../img/score-bg.png) no-repeat;
+  	background-size: 100% 100%;*/
+}
+.integral div img{
+	max-width: 100%;
+}
+.list{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 83%;
+	overflow: hidden;
+  	background: url(../img/score-bg.png) no-repeat;
+  	background-size: 100% 100%;
+  	padding: 0;
+  	margin: 0;
+}
+.list li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.backgame{
+	position: absolute;
+	left: 6.375%;
+	bottom: 4.73%;
+	width: 39.25%;
+	height: 7.4%;
+	background: url(../img/backgame.png) no-repeat;
+	background-size: 100% 100%;
+}
+.award{
+	position: absolute;
+	right: 6.375%;
+	bottom: 4.73%;
+	width: 39.25%;
+	height: 7.4%;
+	background: url(../img/award.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+/****获奖规则页面****/
+.winaward{
+	position: absolute;
+	left: 400%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.winaward div img{
+	max-width: 100%;
+}
+.rule{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 54.92%;
+	overflow: hidden;
+  	background: url(../img/award-bg.png) no-repeat;
+  	background-size: 100% 100%;
+}
+.lookscore{
+	position: absolute;
+	left: 6.15%;
+	bottom: 31.6%;
+	width: 42.6%;
+}
+.shop{
+	position: absolute;
+	right: 6.15%;
+	bottom: 31.6%;
+	width: 42.6%;
+}
+.shop a{
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+/*音频*/
+audio{
+	opacity: 0;
+	margin-top: -100%;
+}
+/*宝箱金光闪动*/
+.faGuang{
+-webkit-animation:guang 0.8s linear 0s infinite alternate;
+animation:guang 0.8s linear 0s infinite alternate;
+-moz-animation:guang 0.8s linear 0s infinite alternate;
+-o-animation:guang 0.8s linear 0s infinite alternate;	
+}
+@-webkit-keyframes guang 
+{0%   {opacity:1;}100% {opacity: 0;}}
+@keyframes guang
+{0%   {opacity:1;}100% {opacity: 0;}}
+@-moz-keyframes guang
+{0%   {opacity:1;}100% {opacity: 0;}}
+@-o-keyframes guang 
+{0%   {opacity:1;}100% {opacity: 0;}}
+
+
+/*爆炸动画*/
+.bomb{
+-webkit-animation:bomb 0.1s linear 0s infinite alternate;
+animation:bomb 0.1s linear 0s infinite alternate;
+-moz-animation:bomb 0.1s linear 0s infinite alternate;
+-o-animation:bomb 0.1s linear 0s infinite alternate;	
+}
+@-webkit-keyframes bomb 
+{0%   {left:-10%;}50%{left:-5%;}100% {left: 0%;}}
+@keyframes bomb
+{0%   {left:-10%;}50%{left:-5%;}100% {left: 0%;}}
+@-moz-keyframes bomb
+{0%   {left:-10%;}50%{left:-5%;}100% {left: 0%;}}
+@-o-keyframes bomb 
+{0%   {left:-10%;}50%{left:-5%;}100% {left: 0%;}}
+
+/* 奖品动画*/
+.itemAnimation1{
+-webkit-animation:item1 4s linear 0s infinite alternate;
+animation:item1 4s linear 0s infinite alternate;
+-moz-animation:item1 4s linear 0s infinite alternate;
+-o-animation:item1 4s linear 0s infinite alternate;
+-ms-animation:item1 4s linear 0s infinite alternate;
+}
+@-webkit-keyframes item1 
+{0%   {-webkit-transform:translateX(0);}100% {-webkit-transform:translateX(360%);}}
+@keyframes item1
+{0%   {transform:translateX(0);}100% {transform:translateX(360%);}}
+@-moz-keyframes item1
+{0%   {-moz-transform:translateX(0);}100% {-moz-transform:translateX(360%);}}
+@-o-keyframes item1 
+{0%   {-o-transform:translateX(0);}100% {-o-transform:translateX(360%);}}
+@-ms-keyframes item1 
+{0%   {-ms-transform:translateX(0);}100% {-ms-transform:translateX(360%);}}
+
+.itemAnimation2{
+-webkit-animation:item2 3.5s ease-in-out 0s infinite alternate;
+animation:item2 3.5s ease-in-out 0s infinite alternate;
+-moz-animation:item2 3.5s ease-in-out 0s infinite alternate;
+-o-animation:item2 3.5s ease-in-out 0s infinite alternate;
+-ms-animation:item2 3.5s linear 0s infinite alternate;
+}
+@-webkit-keyframes item2 
+{0%   {-webkit-transform:translateX(0);}100% {-webkit-transform:translateX(-240%);}}
+@keyframes item2
+{0%   {transform:translateX(0);}100% {transform:translateX(-240%);}}
+@-moz-keyframes item2
+{0%   {-moz-transform:translateX(0);}100% {-moz-transform:translateX(-240%);}}
+@-o-keyframes item2 
+{0%   {-o-transform:translateX(0);}100% {-o-transform:translateX(-240%);}}
+@-ms-keyframes item2 
+{0%   {-ms-transform:translateX(0);}100% {-ms-transform:translateX(-240%);}}
+
+.itemAnimation3{
+-webkit-animation:item3 2s linear 0s infinite alternate;
+animation:item3 2s linear 0s infinite alternate;
+-moz-animation:item3 2s linear 0s infinite alternate;
+-o-animation:item3 2s linear 0s infinite alternate;
+-ms-animation:item3 2s linear 0s infinite alternate;
+}
+@-webkit-keyframes item3 
+{0%   {-webkit-transform:translateX(0);}100% {-webkit-transform:translateX(-226%);}}
+@keyframes item3
+{0%   {transform:translateX(0);}100% {transform:translateX(-226%);}}
+@-moz-keyframes item3
+{0%   {-moz-transform:translateX(0);}100% {-moz-transform:translateX(-226%);}}
+@-o-keyframes item3 
+{0%   {-o-transform:translateX(0);}100% {-o-transform:translateX(-226%);}}
+@-ms-keyframes item3 
+{0%   {-ms-transform:translateX(0);}100% {-ms-transform:translateX(-226%);}}
+
+.itemAnimation4{
+-webkit-animation:item4 2.5s ease-in 0s infinite alternate;
+animation:item4 2.5s ease-in 0s infinite alternate;
+-moz-animation:item4 2.5s ease-in 0s infinite alternate;
+-o-animation:item4 2.5s ease-in 0s infinite alternate;
+-ms-animation:item4 2.5s linear 0s infinite alternate;
+}
+@-webkit-keyframes item4 
+{0%   {-webkit-transform:translateX(0);}100% {-webkit-transform:translateX(360%);}}
+@keyframes item4
+{0%   {transform:translateX(0);}100% {transform:translateX(360%);}}
+@-moz-keyframes item4
+{0%   {-moz-transform:translateX(0);}100% {-moz-transform:translateX(360%);}}
+@-o-keyframes item4 
+{0%   {-o-transform:translateX(0);}100% {-o-transform:translateX(360%);}}
+@-ms-keyframes item4 
+{0%   {-ms-transform:translateX(0);}100% {-ms-transform:translateX(360%);}}
+
+.itemAnimation5{
+-webkit-animation:item5 4s ease-out 0s infinite alternate;
+animation:item5 4s ease-out 0s infinite alternate;
+-moz-animation:item5 4s ease-out 0s infinite alternate;
+-o-animation:item5 4s ease-out 0s infinite alternate;
+-ms-animation:item5 4s linear 0s infinite alternate;
+}
+@-webkit-keyframes item5 
+{0%   {-webkit-transform:translateX(0);}100% {-webkit-transform:translateX(260%);}}
+@keyframes item5
+{0%   {transform:translateX(0);}100% {transform:translateX(260%);}}
+@-moz-keyframes item5
+{0%   {-moz-transform:translateX(0);}100% {-moz-transform:translateX(260%);}}
+@-o-keyframes item5 
+{0%   {-o-transform:translateX(0);}100% {-o-transform:translateX(260%);}}
+@-ms-keyframes item5
+{0%   {-ms-transform:translateX(0);}100% {-ms-transform:translateX(260%);}}
+
+.itemAnimation6{
+-webkit-animation:item6 3.5s ease-in-out 0s infinite alternate;
+animation:item6 3.5s ease-in-out 0s infinite alternate;
+-moz-animation:item6 3.5s ease-in-out 0s infinite alternate;
+-o-animation:item6 3.5s ease-in-out 0s infinite alternate;
+-ms-animation:item6 3.5s linear 0s infinite alternate;
+}
+@-webkit-keyframes item6 
+{0%   {-webkit-transform:translateX(0);}100% {-webkit-transform:translateX(-226%);}}
+@keyframes item6
+{0%   {transform:translateX(0);}100% {transform:translateX(-226%);}}
+@-moz-keyframes item6
+{0%   {-moz-transform:translateX(0);}100% {-moz-transform:translateX(-226%);}}
+@-o-keyframes item6 
+{0%   {-o-transform:translateX(0);}100% {-o-transform:translateX(-226%);}}
+@-ms-keyframes item6 
+{0%   {-ms-transform:translateX(0);}100% {-ms-transform:translateX(-226%);}}
+
+.itemAnimation7{
+-webkit-animation:item7 3s linear 0s infinite alternate;
+animation:item7 3s linear 0s infinite alternate;
+-moz-animation:item7 3s linear 0s infinite alternate;
+-o-animation:item7 3s linear 0s infinite alternate;
+-ms-animation:item7 3s linear 0s infinite alternate;
+}
+@keyframes item7
+/*使用position在动画较多的情况下性能较差*/
+/*{0%   {left:0%;}100% {left: 70%;}}
+@-moz-keyframes item7
+{0%   {left:0%;}100% {left: 70%;}}
+@-webkit-keyframes item7 
+{0%   {left:0%;}100% {left: 70%;}}
+@-o-keyframes item7 
+{0%   {left:0%;}100% {left: 70%;}}*/
+
+{0%   {transform:translateX(0);}100% {transform:translateX(226%);}}
+@-moz-keyframes item7
+{0%   {-moz-transform:translateX(0);}100% {-moz-transform:translateX(226%);}}
+@-webkit-keyframes item7 
+{0%   {-webkit-transform:translateX(0);}100% {-webkit-transform:translateX(226%);}}
+@-o-keyframes item7 
+{0%   {-o-transform:translateX(0);}100% {-o-transform:translateX(226%);}}
+@-ms-keyframes item7 
+{0%   {-ms-transform:translateX(0);}100% {-ms-transform:translateX(226%);}}
+
+/***** hook动画 ******/
+.hookAnimation {
+  animation: hookRotate 1.5s linear 0s infinite alternate;
+  -webkit-animation: hookRotate 1.5s linear 0s infinite alternate;
+  -moz-animation: hookRotate 1.5s linear 0s infinite alternate;
+  -o-animation: hookRotate 1.5s linear 0s infinite alternate;
+}
+@keyframes hookRotate {
+  0% {
+    transform: rotate(-50deg);transform-origin: 50% 30%;
+    -webkit-transform: rotate(-50deg);-webkit-transform-origin: 50% 30%;
+    -moz-transform: rotate(-50deg);-moz-transform-origin: 50% 30%;
+    -o-transform: rotate(-50deg);-o-transform-origin: 50% 30%;
+    -ms-transform: rotate(-50deg);-ms-transform-origin: 50% 30%;
+  }
+  100% {
+    transform: rotate(45deg);transform-origin: 50% 30%;
+    -webkit-transform: rotate(45deg);-webkit-transform-origin: 50% 30%;
+    -moz-transform: rotate(45deg);-moz-transform-origin: 50% 30%;
+    -o-transform: rotate(45deg);-o-transform-origin: 50% 30%;
+    -ms-transform: rotate(45deg);-ms-transform-origin: 50% 30%;
+  }
+}
+@-webkit-keyframes hookRotate {
+  0% {
+    transform: rotate(-50deg);transform-origin: 50% 30%;
+    -webkit-transform: rotate(-50deg);-webkit-transform-origin: 50% 30%;
+    -moz-transform: rotate(-50deg);-moz-transform-origin: 50% 30%;
+    -o-transform: rotate(-50deg);-o-transform-origin: 50% 30%;
+    -ms-transform: rotate(-50deg);-ms-transform-origin: 50% 30%;
+  }
+  100% {
+    transform: rotate(45deg);transform-origin: 50% 30%;
+    -webkit-transform: rotate(45deg);-webkit-transform-origin: 50% 30%;
+    -moz-transform: rotate(45deg);-moz-transform-origin: 50% 30%;
+    -o-transform: rotate(45deg);-o-transform-origin: 50% 30%;
+    -ms-transform: rotate(45deg);-ms-transform-origin: 50% 30%;
+  }
+}
+@-moz-keyframes hookRotate {
+  0% {
+    transform: rotate(-50deg);transform-origin: 50% 30%;
+    -webkit-transform: rotate(-50deg);-webkit-transform-origin: 50% 30%;
+    -moz-transform: rotate(-50deg);-moz-transform-origin: 50% 30%;
+    -o-transform: rotate(-50deg);-o-transform-origin: 50% 30%;
+    -ms-transform: rotate(-50deg);-ms-transform-origin: 50% 30%;
+  }
+  100% {
+    transform: rotate(45deg);transform-origin: 50% 30%;
+    -webkit-transform: rotate(45deg);-webkit-transform-origin: 50% 30%;
+    -moz-transform: rotate(45deg);-moz-transform-origin: 50% 30%;
+    -o-transform: rotate(45deg);-o-transform-origin: 50% 30%;
+    -ms-transform: rotate(45deg);-ms-transform-origin: 50% 30%;
+  }
+}
+@-o-keyframes hookRotate {
+  0% {
+    transform: rotate(-50deg);transform-origin: 50% 30%;
+    -webkit-transform: rotate(-50deg);-webkit-transform-origin: 50% 30%;
+    -moz-transform: rotate(-50deg);-moz-transform-origin: 50% 30%;
+    -o-transform: rotate(-50deg);-o-transform-origin: 50% 30%;
+    -ms-transform: rotate(-50deg);-ms-transform-origin: 50% 30%;
+  }
+  100% {
+    transform: rotate(45deg);transform-origin: 50% 30%;
+    -webkit-transform: rotate(45deg);-webkit-transform-origin: 50% 30%;
+    -moz-transform: rotate(45deg);-moz-transform-origin: 50% 30%;
+    -o-transform: rotate(45deg);-o-transform-origin: 50% 30%;
+    -ms-transform: rotate(45deg);-ms-transform-origin: 50% 30%;
+  }
+}
+@-ms-keyframes hookRotate {
+  0% {
+    transform: rotate(-50deg);transform-origin: 50% 30%;
+    -webkit-transform: rotate(-50deg);-webkit-transform-origin: 50% 30%;
+    -moz-transform: rotate(-50deg);-moz-transform-origin: 50% 30%;
+    -o-transform: rotate(-50deg);-o-transform-origin: 50% 30%;
+    -ms-transform: rotate(-50deg);-ms-transform-origin: 50% 30%;
+  }
+  100% {
+    transform: rotate(45deg);transform-origin: 50% 30%;
+    -webkit-transform: rotate(45deg);-webkit-transform-origin: 50% 30%;
+    -moz-transform: rotate(45deg);-moz-transform-origin: 50% 30%;
+    -o-transform: rotate(45deg);-o-transform-origin: 50% 30%;
+    -ms-transform: rotate(45deg);-ms-transform-origin: 50% 30%;
+  }
+}
+
+/*** 媒体查询  ***/
+@media screen and (min-width: 640px) {
+
+  .wrap {
+    width: 640px;
+    height: 1136px;
+  }
+  .itemAnimation1{
+animation:item1 4s linear 0.5s infinite alternate;
+-moz-animation:item1 4s linear 0.5s infinite alternate;
+-webkit-animation:item1 4s linear 0.5s infinite alternate;
+-o-animation:item1 4s linear 0.5s infinite alternate;
+-ms-animation:item1 4s linear 0.5s infinite alternate;
+}
+.itemAnimation2{
+animation:item2 3.5s ease-in-out 0s infinite alternate;
+-moz-animation:item2 3.5s ease-in-out 0s infinite alternate;
+-webkit-animation:item2 3.5s ease-in-out 0s infinite alternate;
+-o-animation:item2 3.5s ease-in-out 0s infinite alternate;
+-ms-animation:item2 4s linear 0s infinite alternate;
+}
+.itemAnimation3{
+animation:item3 4.5s linear 0.5s infinite alternate;
+-moz-animation:item3 4.5s linear 0.5s infinite alternate;
+-webkit-animation:item3 4.5s linear 0.5s infinite alternate;
+-o-animation:item3 4.5s linear 0.5s infinite alternate;
+-ms-animation:item3 4.5s linear 0.5s infinite alternate;
+}
+.itemAnimation4{
+animation:item4 4s ease-in 0s infinite alternate;
+-moz-animation:item4 4s ease-in 0s infinite alternate;
+-webkit-animation:item4 4s ease-in 0s infinite alternate;
+-o-animation:item4 4s ease-in 0s infinite alternate;
+-ms-animation:item4 4s linear 0s infinite alternate;
+}
+.itemAnimation5{
+animation:item5 5s ease-out 0.5s infinite alternate;
+-moz-animation:item5 5s ease-out 0.5s infinite alternate;
+-webkit-animation:item5 5s ease-out 0.5s infinite alternate;
+-o-animation:item5 5s ease-out 0.5s infinite alternate;
+-ms-animation:item5 5s linear 0.5s infinite alternate;
+}
+.itemAnimation6{
+animation:item6 6s ease-in-out 0s infinite alternate;
+-moz-animation:item6 6s ease-in-out 0s infinite alternate;
+-webkit-animation:item6 6s ease-in-out 0s infinite alternate;
+-o-animation:item6 6s ease-in-out 0s infinite alternate;
+-ms-animation:item6 6s linear 0s infinite alternate;
+}
+.itemAnimation7{
+animation:item7 3s ease-in-out 0s infinite alternate;
+-moz-animation:item7 3s ease-in-out 0s infinite alternate;
+-webkit-animation:item7 3s ease-in-out 0s infinite alternate;
+-o-animation:item7 3s ease-in-out 0s infinite alternate;
+-ms-animation:item7 3s ease-in-out 0s infinite alternate;
+}
+
+}
+@media screen and (max-width: 640px) {
+.tabitems ul li p{
+	font-size: 1em;
+	line-height: 2.2em;
+}
+#gunzi{
+	height: 80px;
+}
+
+}
+@media screen and (max-height: 560px) {
+	.enter{
+		bottom: -83.5%;
+	}
+	#enterlook{
+		bottom: 5.3%;
+	}
+}
