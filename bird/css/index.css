@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/**
+ * @authors Your Name
+ * @date    2016-05-26 10:26:10
+ * @version Flappy bird
+ */
+
+/* reset */
+body,div,ul,li { margin:0; padding:0; }
+img { border:0; }
+ul { list-style:none; }
+em { font-style: normal; }
+a:focus { outline:none; }
+body { font-family:simsun; overflow-x:hidden; color:#333; }
+
+.fb_wrap { position:relative; width:343px; height:480px; margin:0 auto; background:url("../images/bg.jpg"); overflow:hidden; }
+
+.fb_wrap .game_start .scoring { position:absolute; top:50px; z-index:2; width:100%; text-align:center; }
+.fb_wrap .game_start .head { position:absolute; top:100px; left:55px; }
+.fb_wrap .game_start .head span {position:absolute; top:20px; left:200px; width:40px; height:26px; background:url("../images/bird0.png"); }
+.fb_wrap .game_start .btns { position:absolute; top:300px; left:72px; text-align:center; }
+.fb_wrap .game_start .btns span { float:left; width:85px; height:29px; }
+.fb_wrap .game_start .btns .start_btn { background:url("../images/start.jpg"); }
+.fb_wrap .game_start .btns .submit_btn { margin-left:30px; background:url("../images/submit.jpg"); }
+
+.fb_wrap .slider { position:absolute; top:422px; width:9999px; }
+.fb_wrap .slider img { float:left; }
+
+.fb_wrap .bird { position:absolute; top:200px; left:50px; display:none; }
+
+.fb_wrap .pipe_wrap { height:100%; }
+.fb_wrap .pipe_wrap .pipe { position:absolute; width:62px; height:88%; }
+.fb_wrap .pipe_wrap .top_pipe { position:absolute; top:0; width:62px; background:url("../images/up_mod.png"); }
+.fb_wrap .pipe_wrap .top_pipe div { background:url("../images/up_pipe.png") 0 bottom no-repeat; }
+.fb_wrap .pipe_wrap .bottom_pipe { position:absolute; bottom:0; width:62px; background:url("../images/down_mod.png"); }
+.fb_wrap .pipe_wrap .bottom_pipe div { background:url("../images/down_pipe.png") 0 top no-repeat; }
+
+.fb_wrap .gameover_wrap .g_img { position:absolute; top:-50px; left:65px; -webkit-transition:all 1s cubic-bezier(0.2,-0.5,0.8,1.5); }
+.fb_wrap .gameover_wrap .g_msg { position:absolute; top:500px; left:34px; width:269px; height:135px; background:url("../images/message.jpg"); font-size:24px; font-weight:bold; -webkit-transition:all 1s cubic-bezier(0.2,-0.5,0.8,1.5); }
+.fb_wrap .gameover_wrap .g_msg span,
+.fb_wrap .gameover_wrap .g_msg em { position:absolute; top:30px; right:25px; }
+.fb_wrap .gameover_wrap .g_msg em { top:80px; }
+.fb_wrap .gameover_wrap .g_btn { position:absolute; top:320px; left:-120px; -webkit-transition:all 1s cubic-bezier(0.2,-0.5,0.8,1.5); }

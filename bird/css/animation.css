@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/**
+ * @authors Your Name
+ * @date    2016-05-26 10:26:10
+ * @version Flappy bird
+ */
+
+.fb_wrap .game_start .head {
+	-webkit-animation:move 2s ease-in infinite;
+}
+.fb_wrap .slider {
+	-webkit-animation:sliderMove 4s linear infinite;
+}
+.fb_wrap .game_start .head span {
+	-webkit-animation:birdMove 0.5s linear infinite;
+}
+@-webkit-keyframes move {
+	0% { top: 100px; }
+	50% { top: 120px; }
+	100% { top: 100px; }
+}
+
+@-webkit-keyframes sliderMove{
+	0% { left: 0; }
+	100% { left: -343px; }
+}
+
+@-webkit-keyframes birdMove{
+	0% { background:url("../images/bird0.png"); }
+	100% { background:url("../images/bird1.png"); }
+}

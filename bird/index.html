@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Flappy bird</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="stylesheet" href="css/bird.css" />
+	</head>
+	<body>
+	<div class="fb_wrap" id="fbWrap">
+		<!-- 游戏初始 -->
+		<div class="game_start">
+			<div class="scoring" id="scoring">
+				<img src="images/0.jpg" alt="" />
+			</div>
+			<div class="head" id="head">
+				<img src="images/head.jpg" alt="" />
+				<span></span>
+			</div>
+			<div class="btns" id="btns">
+				<span class="start_btn" id="start"></span>
+				<span class="submit_btn" id="submit"></span>
+			</div>
+		</div>
+
+		<!-- 移动条 -->
+		<div class="slider">
+			<img src="images/slider.jpg" alt="" />
+			<img src="images/slider.jpg" alt="" />
+		</div>
+
+		<!-- 鸟 -->
+		<div class="bird" id="flappyBird">
+			<img src="images/bird0.png" alt="" />
+		</div>
+
+		<!-- 管道 -->
+		<ul class="pipe_wrap" id="pipeWrap">
+			<!-- <li class="pipe" style="left:200px;">
+				<div class="top_pipe">
+					<div style="height:120px;"></div>
+				</div>
+				<div class="bottom_pipe">
+					<div style="height:180px;"></div>
+				</div>
+			</li> -->
+		</ul>
+
+		<!-- 游戏结束 -->
+		<div class="gameover_wrap">
+			<div class="g_img" id="gameover">
+				<img src="images/game_over.jpg" alt="" />
+			</div>
+			<div class="g_msg" id="message">
+				<span id="endScoring">1</span>
+				<em id="oldScoring">2</em>
+			</div>
+			<div class="g_btn" id="okBtn">
+				<img src="images/ok.jpg" alt="" />
+			</div>
+		</div>
+		
+		<!-- 游戏音乐 -->
+		<audio id="gameMusic" loop src="source/game_music.mp3"></audio>
+		<audio id="bullet" src="source/bullet.mp3"></audio>
+		<audio id="gameOverMusic" src="source/game_over.mp3"></audio>
+	</div>
+	</body>
+	<script type="text/javascript" src="js/game.js"></script>
+</html>
