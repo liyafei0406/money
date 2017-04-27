@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/**
+ * @authors Your Name
+ * @date    2016-05-26 10:26:10
+ * @version Flappy bird
+ */
+
+/* style */
+@import "index.css";
+
+/* animation */
+@import "animation.css";
